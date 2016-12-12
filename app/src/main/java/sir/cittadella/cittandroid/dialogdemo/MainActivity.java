@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-
+    Bundle fargs = new Bundle();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,8 +18,11 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onClick(View v){
+                        MyDialog myDialog= new MyDialog();
+                        //MyDialog myDialog = MyDialog.newFrag("pippo","pluto","paperino");
 
-                        MyDialog myDialog = new MyDialog("pippo","pluto","paperino");
+
+
                         myDialog.show(getFragmentManager(), "123");
                     }
 
