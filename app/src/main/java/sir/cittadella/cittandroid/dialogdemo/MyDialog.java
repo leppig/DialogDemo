@@ -23,10 +23,10 @@ public class MyDialog extends DialogFragment {
 
             args.getBundle("dialog1");
 
-            this.msg=args.getString("msg");
-            this.msgok=args.getString("msgok");
+            this.msg="Default";
+            this.msgok="defaultok";
             this.msgko=args.getString("msgko");
-            */
+*/
         }
 
         public static MyDialog newFrag(String m1,String m2,String m3){
@@ -47,12 +47,12 @@ public class MyDialog extends DialogFragment {
             // build dialog
             Bundle args = getArguments();
 
-        //    if(args.getBundle("dialog1")){
+         if(args!=null){
 
             this.msg=args.getString("msg");
             this.msgok=args.getString("msgok");
             this.msgko=args.getString("msgko");
-          //  };
+           };
 
             builder.setMessage(this.msg)
                     .setPositiveButton(this.msgok, new DialogInterface.OnClickListener() {

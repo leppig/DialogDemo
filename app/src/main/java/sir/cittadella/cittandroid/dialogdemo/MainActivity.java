@@ -18,8 +18,28 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onClick(View v){
-                        MyDialog myDialog= new MyDialog();
-                        //MyDialog myDialog = MyDialog.newFrag("pippo","pluto","paperino");
+                       // MyDialog myDialog= new MyDialog();
+                        MyDialog myDialog = MyDialog.newFrag("pippo","pluto","paperino");
+
+
+
+                        myDialog.show(getFragmentManager(), "1233");
+                    }
+
+
+                }
+        );
+        Button button1 = (Button) findViewById(R.id.button1);
+        button1.setOnClickListener(
+                new View.OnClickListener(){
+
+                    @Override
+                    public void onClick(View v){
+                        // MyDialog myDialog= new MyDialog();
+                        MyDialog myDialog = new MyDialog();
+//                        MyDialog myDialog = MyDialog.newFrag("piopo","pulto","rapeerino");
+
+
 
 
 
@@ -29,6 +49,5 @@ public class MainActivity extends AppCompatActivity {
 
                 }
         );
-
     }
 }
