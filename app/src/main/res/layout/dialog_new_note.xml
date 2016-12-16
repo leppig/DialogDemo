@@ -4,13 +4,13 @@
     android:padding="10dp">
 
     <TextView
-        android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:id="@+id/editTitle"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="35dp" />
+        android:layout_marginTop="35dp"
+        android:hint="@s" />
 
     <CheckBox
         android:text="@string/idea_checkbox"
@@ -20,7 +20,7 @@
         android:layout_alignEnd="@+id/checkBoxToDo"
         android:id="@+id/checkBoxIdea"
         android:layout_marginTop="35dp"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentStart="true" />
 
     <CheckBox
         android:text="@string/important_checkbox"
@@ -40,14 +40,15 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="35dp" />
 
-    <TextView
-        android:text="TextView"
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editDescription"
         android:layout_below="@+id/editTitle"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="35dp" />
+        android:layout_marginTop="35dp"
+        android:hint="@string/description_hint"
+        android:inputType="textMultiLine" />
 
     <Button
         android:text="@string/cancel_button"
